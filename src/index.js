@@ -8,6 +8,7 @@ import { applyMiddleware, legacy_createStore as createStore } from "redux";
 import logger from "redux-logger";
 import { myReducer } from "./reducers";
 import thunk from "redux-thunk";
+import { ToastContainer } from "react-toastify";
 import { composeWithDevTools } from "@redux-devtools/extension";
 
 const store = createStore(
@@ -22,6 +23,7 @@ root.render(
     <>
       <Provider store={store}>
         <App />
+        <ToastContainer />
       </Provider>
     </>
   </BrowserRouter>
