@@ -28,8 +28,17 @@ export default function PostForm() {
     // burada ilgili eylemi dispatch edin
     // toast mesajı gösterin
     // sonra aşağıdaki satırı aktifleştirin
-    myDispatch(notEkleAPI);
-    toast.info("yeni not eklendi", { autoClose: 500 });
+    myDispatch(notEkleAPI(yeniNot));
+    toast.success("Yeni Not eklendi.", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
     setTimeout(() => history.push("/notlar"), 2000);
   }
 
