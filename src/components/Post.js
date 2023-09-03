@@ -25,7 +25,7 @@ export default function Post({ item }) {
   }
 
   return (
-    <div className="beyazKutu p-8 pb-6 mb-4 text-sm">
+    <div className="beyazKutu p-8 pb-6 mb-4 text-sm Yeninot-form">
       <h1>
         {formatDistanceToNow(new Date(item.date), {
           addSuffix: true,
@@ -34,13 +34,13 @@ export default function Post({ item }) {
       </h1>
 
       {item.body.split("|").map((li) => (
-        <p className="mt-2" key={li}>
+        <p className="mt-2 text-s font-serif p-1" key={li}>
           - {li}
         </p>
       ))}
 
       <button
-        className="text-xs text-amber-600 mt-4 underline"
+        className="text-xs text-amber-600 bg-white hover:bg-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
         onClick={handleSil}
       >
         Bu notu sil

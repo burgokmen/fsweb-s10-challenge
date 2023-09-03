@@ -4,29 +4,34 @@ import PostForm from "./components/PostForm";
 import PostList from "./components/PostList";
 import Img from "./assets/gratitude.jpg";
 
+/* const activeNavLink = {
+  border-color: white
+} */
 export default function App() {
   return (
     <div>
-      <div className="bg-white shadow mb-8">
-        <nav className="flex gap-2 justify-center max-w-xl mx-auto text-zinc-500">
+      <div className="bg-blue-400 shadow mb-8">
+        <nav className="flex p-3 gap-2 justify-center max-w-xl mx-auto text-zinc-500">
           <NavLink
             to="/"
             exact
-            className="p-4 pb-3 tracking-tighter"
+            //className="p-4 pb-3 tracking-tighter text-orange-500 hover:text-orange-800"
+            className=" bg-orange-500 hover:text-orange-200 active:bg-orange-700 active:text-orange-700 text-white font-bold py-2 px-4 border-b-4 gap-2 border-orange-700 hover:border-orange-500 rounded"
+            //style={(isActive) => (isActive ? activeNavLink : null)}
             activeClassName="text-amber-600"
           >
             Anasayfa
           </NavLink>
           <NavLink
             to="/notlar"
-            className="p-4 pb-3 tracking-tighter"
+            className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
             activeClassName="text-amber-600"
           >
             Tüm Notlar
           </NavLink>
           <NavLink
             to="/yeni-not"
-            className="p-4 pb-3 tracking-tighter"
+            className=" bg-orange-500 hover:text-orange-200 text-white font-bold py-2 px-4 border-b-4 gap-2 border-orange-700 hover:border-orange-500 rounded"
             activeClassName="text-amber-600"
           >
             Yeni Not
@@ -36,7 +41,7 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <div className="max-w-xl mx-auto px-4 pb-8">
-            <div className="beyazKutu">
+            <div className="beyazKutu Yeninot-form ">
               <img src={Img} alt="" />
               <div className="px-8 pt-7 pb-6 text-sm">
                 <h1 className="text-3xl text-amber-600">

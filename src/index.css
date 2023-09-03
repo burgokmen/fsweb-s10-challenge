@@ -9,7 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffe4a9;
+
+  background-color: rgb(56, 98, 188);
 }
 
 code {
@@ -32,4 +33,11 @@ h1 {
 
 nav {
   font-weight: 500;
+}
+
+.Yeninot-form {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
 }
