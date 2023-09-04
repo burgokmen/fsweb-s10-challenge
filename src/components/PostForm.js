@@ -55,7 +55,7 @@ export default function PostForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-3 p-8 flex-1"
       >
-        <h1>Minnettar hissediyorum, çünkü...</h1>
+        <h1 className="text-sm font-mono">Minnettar hissediyorum, çünkü...</h1>
         <p className="text-s font-serif">
           Minnettar günlüğü notları; her gün teşekkür edilen birkaç şeyi
           listelemekten, minnettar olunan şeylere dair daha uzun ve kapsamlı

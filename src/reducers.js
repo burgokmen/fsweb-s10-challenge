@@ -30,10 +30,10 @@ function baslangicNotlariniGetir(key) {
   }
 }
 
-export function myReducer(state = baslangicDegerleri.notlar, action) {
+export function myReducer(state = baslangicNotlariniGetir(), action) {
   switch (action.type) {
     case NOT_EKLE:
-      const newState = { ...state, body: [...state.body, action.payload] };
+      const newState = { ...state, notlar: [...state.notlar, action.payload] };
       localStorageStateYaz(newState);
       return newState;
     case NOT_SIL:

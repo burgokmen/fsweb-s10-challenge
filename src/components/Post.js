@@ -26,7 +26,7 @@ export default function Post({ item }) {
 
   return (
     <div className="beyazKutu p-8 pb-6 mb-4 text-sm Yeninot-form">
-      <h1>
+      <h1 className="font-sans">
         {formatDistanceToNow(new Date(item.date), {
           addSuffix: true,
           locale: tr,

@@ -44,7 +44,7 @@ export default function App() {
             <div className="beyazKutu Yeninot-form ">
               <img src={Img} alt="" />
               <div className="px-8 pt-7 pb-6 text-sm">
-                <h1 className="text-3xl text-amber-600">
+                <h1 className="text-3xl text-amber-600 font-mono">
                   Minnet Günlüğü Nedir?
                 </h1>
                 <p className="my-2">
